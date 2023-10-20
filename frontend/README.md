@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+1. npx create-react-app client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. yarn
 
-## Available Scripts
+3. npm install --save react-router-dom(@5 --save-exact)
 
-In the project directory, you can run:
+4. import {BrowserRouter} from 'react-router-dom';//4 Add this after following step 3 in README.md
 
-### `npm start`
+5. import {Route} from 'react-router-dom';//5 Add this after following step 3 in README.md
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+6. create a Users.js file and then you can make routes <BrowserRouter>{/* this is used so you can add routes "https:localhost:3000/help" */}<Route path ="/" exact="true">{/*  */}<Users/> </Route></BrowserRouter>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+7. Adding a UsersItemComponent
+frontend\src\user\components\UserItem.js
 
-### `npm test`
+8. Styling Our App and more components
+frontend\src\shared\components\UIElements\Card.js
+frontend\src\shared\components\UIElements\Avatar.js
+frontend\src\user\components\UserItem.js
+frontend\src\user\components\UsersList.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+9. Presentational vs Stateful Components
 
-### `npm run build`
+10. Addomg a main header
+frontend\src\shared\components\Navigation\MainHeader.js
+frontend\src\shared\components\Navigation\MainNavigation.js
+Created a navigation folder that will contain all the components that will enable the user to navigate the website
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+11. Adding Navlinks
+frontend\src\shared\components\Navigation\NavLinks.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+12. Implementing A Abasic Desktop and Mobile Navigation
+frontend\src\shared\components\Navigation\MainNavigation.js
+C:\Users\elect\Desktop\Udemy-The MERN Fullstack Guide\frontend\src\shared\components\Navigation\SideDrawer.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+13. Understanding Portals
+C:\Users\elect\Desktop\Udemy-The MERN Fullstack Guide\frontend\public\index.html
+C:\Users\elect\Desktop\Udemy-The MERN Fullstack Guide\frontend\src\shared\components\Navigation\SideDrawer.js
 
-### `npm run eject`
+14. Handling the Drawer State
+C:\Users\elect\Desktop\Udemy-The MERN Fullstack Guide\frontend\src\shared\components\Navigation\MainNavigation.js
+C:\Users\elect\Desktop\Udemy-The MERN Fullstack Guide\frontend\src\shared\components\UIElements\Backdrop.js
+C:\Users\elect\Desktop\Udemy-The-MERN-Fullstack-Guide\Udemy-The-MERN-Fullstack-Guide\frontend\public\index.html
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+15. Animating the Sidedrawer***********************************
+npm install --save react-transition-group
+//it is simply a library that makes it easy for us to play a little animation if we add an item to the
+C:\Users\elect\Desktop\Udemy-The-MERN-Fullstack-Guide\Udemy-The-MERN-Fullstack-Guide\frontend\src\shared\components\Navigation\SideDrawer.js
+C:\Users\elect\Desktop\Udemy-The-MERN-Fullstack-Guide\Udemy-The-MERN-Fullstack-Guide\frontend\src\shared\components\Navigation\MainNavigation.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+16. Rendering User Places & Using Dynamic Route Segments
+C:\Users\elect\Desktop\Udemy-The-MERN-Fullstack-Guide\Udemy-The-MERN-Fullstack-Guide\frontend\src\places\components\PlaceList.js
+C:\Users\elect\Desktop\Udemy-The-MERN-Fullstack-Guide\Udemy-The-MERN-Fullstack-Guide\frontend\src\places\components\PlaceItem.js
+17.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+18.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+19.
 
-## Learn More
+20.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+21.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+22.
 
-### Code Splitting
+23.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+24.
 
-### Analyzing the Bundle Size
+25.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+26.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+27.
 
-### Advanced Configuration
+28.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+29.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+30.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+31.
+
+32.
+
+33.
+
+34.
+
+35.
+
+36.
+
+37.
+
+38.
+
+39.
+
+40.
+
+41.
+
+42.
+
+43.
+
+44.
+
+45.
+
+46.
+
+47.
+
+48.
+
+49.
+
+50.
+
+51.
+
+52.
+
+53.
+
+54.
+
+55.
+
+56.
+
+57.
+
+58.
+
+59.
+
+60.
+
+61.
+
+62.
+
+63.
+
+64.
+
+65.
+
+66.
+
+67.
+68.
+69.
+70.
+71.
+72.
+73.
+74.
+75.
+76.
+77.
+78.
+79.
+80.
+81.
+82.
+83.
+84.
+85.
+86.
+87.
+88.
+89.
+90.
+91.
+92.
+93.
+94.
+95.
+96.
+97.
+98.
+99.
+100.

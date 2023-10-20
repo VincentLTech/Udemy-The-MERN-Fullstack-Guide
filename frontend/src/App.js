@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import {BrowserRouter,Routes,Route } from 'react-router-dom';//4 Add this after following step 3 in README.md
+// import {Redirect} from 'react-router-dom';//5 Add this after following step 3 in README.md
+// import {Routes as Switch} from 'react-router-dom';//5 Add this after following step 3 in README.md
+import Users from './user/pages/Users';
+import NewPlace from './places/pages/NewPlace';
+import MainNavigation from './shared/components/Navigation/MainNavigation';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>{/* this is used so you can add routes "https:localhost:3000/help" */}
+      <MainNavigation/>
+        <main>
+        <Routes>
+          <Route path ="/" element={<Users/>}/>{/*  */}
+          <Route path ="/places/new" element={<NewPlace/>}/>
+        {/* <Redirect to="/"/> */}
+        </Routes>
+        </main>
+    </BrowserRouter>
   );
 }
 
